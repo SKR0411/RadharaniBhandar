@@ -55,7 +55,7 @@ function sendTID() {
   if (utr === "") {
     alert("Please enter Your Transaction ID.");
   } else {
-    const phoneNumber = "916003375755";
+    const phoneNumber = "919401925988";
     const message = `My Transection ID is: ${utr}`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
@@ -112,9 +112,6 @@ function updateBuyListDisplay() {
   container.innerHTML += "<ul>" + list.map(item => {
     const subtotal = item.price * item.quantity;
     total += subtotal;
-    document.getElementById("amountDisplay").textContent = total;
-    
-
     return `<li>${item.name} : ₹${item.price} × ${item.quantity} = ₹${subtotal}</li>`;
   }).join("") + `</ul><strong>Total: ₹${total}</strong>`;
 }
@@ -143,7 +140,7 @@ function shareWhatsAppList() {
   });
   message += `\n*Total = ₹${total}*`;
   
-  const whatsappUrl = `https://wa.me/916003375755?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = `https://wa.me/919401925988?text=${encodeURIComponent(message)}`;
   window.open(whatsappUrl, "_blank");
 }
 
